@@ -71,3 +71,22 @@
     font: 14px/34px $open-sans;
   }
 }
+
+
+/*-------@media--------*/
+@media (max-width: 991px) {
+
+  .subscribe  {
+    order: 4;
+  }
+}
+
+/*-------@media--------*/
+@media (max-width: 768px) {
+
+  .footer .row .col-sm-10{
+    border-bottom: 1px solid $gray;
+    margin-bottom: 30px;
+  }
+}
+

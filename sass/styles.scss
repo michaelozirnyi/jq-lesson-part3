@@ -3,7 +3,6 @@
 @import 'footer';
 @import 'helper-classes';
 
-
 body {
   font-family: $raleway;
   position: relative;
@@ -225,26 +224,10 @@ h5 {
 }
 
 /*-------FEATURED BOATS section---------*/
-
 .feature h2{
   margin-top: 100px;
 }
 
-
-/*----------------------------------------------------------*/
-
-/*-------@media--------*/
-@media (max-width: 1199px) {
-
-
-
-}
-
-/*-------@media--------*/
-@media (max-width: 991px) {
-
-
-}
 
 /*-------@media--------*/
 @media (max-width: 768px) {
@@ -252,7 +235,6 @@ h5 {
   h1 {
     font-size: 50px;
   }
-
 
 }
 
@@ -262,6 +244,5 @@ h5 {
   h1 {
     font-size: 45px;
   }
-
 }
 

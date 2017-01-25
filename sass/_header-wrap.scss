@@ -45,7 +45,20 @@
       }
     }
   }
+
+  .navbar {
+    position: relative;
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $white;
+      opacity: .6;
+    }
+  }
 }
+
 
 .reservation {
   margin-top: 20vh;
@@ -82,3 +95,14 @@
     }
   }
 }
+
+
+/*-------@media--------*/
+@media (max-width: 768px) {
+
+  .menu-bar li {
+    padding-right: 50px;
+  }
+}
+
+
