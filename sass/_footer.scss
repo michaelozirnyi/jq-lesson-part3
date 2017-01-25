@@ -1,0 +1,73 @@
+.footer {
+  display: block;
+  position: relative;
+  min-height: 320px;
+  background-color: $footer-bgc;
+  padding: 60px 0 70px;
+
+  /*border: none;
+  border-width: 100px;
+  border-top: 6px solid ;
+  border-image: url("../images/border-for-foot.png") 50% repeat;
+*/
+
+  form {
+    position: relative;
+    z-index: 5;
+
+    input {
+      width: 100%;
+      height: 42px;
+      border-radius: 5px;
+      border: none;
+      padding: 0 150px 0 20px;
+    }
+
+    .btn-footer {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      background-color: $red;
+      border-radius: 0 5px 5px 0;
+      padding: 16px 35px;
+      border: none;
+      color: $white;
+      font: 14px/10px $open-sans;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  .social {
+    margin-top: 35px;
+    padding-left: 15px;
+
+    a{
+      display: block;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      background-color: $gray;
+      margin-right: 20px;
+      color: #fff;
+      transition: .5s;
+      
+      &:hover {
+        background-color: $white;
+        color: $red;
+      }
+    }
+  }
+
+  h5 {
+    margin-bottom: 25px;
+  }
+  p {
+    font: 14px/34px $open-sans;
+  }
+}

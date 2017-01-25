@@ -1,0 +1,84 @@
+.header-wrap {
+  background: #005853;
+  position: relative;
+  height: 700px;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  video {
+    min-width: 100vw;
+  }
+}
+
+.header {
+  position: relative;
+  padding-top: 35px;
+  margin: 0;
+
+  .logo {
+    margin: auto 0;
+    width: 166px;
+    height: 33px;
+  }
+
+  .menu-bar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      font: 16px/42px $raleway;
+      font-weight: 700;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      padding: 12px 40px;
+
+      &:hover {
+        border-color: #fff;
+      }
+    }
+  }
+}
+
+.reservation {
+  margin-top: 20vh;
+
+  form {
+    margin: 90px auto 0;
+  }
+
+  input {
+    height: 60px;
+    width: calc(100% - 200px);
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding-left: 20px;
+
+  }
+
+  button {
+    background-color: $red;
+    border-radius: 0 5px 5px 0;
+    padding: 23px 40px;
+    margin-left: -5px;
+    border: none;
+    color: $white;
+    font-weight: 700;
+    font: 14px/11px $raleway;
+
+    i {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

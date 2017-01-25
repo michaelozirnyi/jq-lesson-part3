@@ -1,0 +1,267 @@
+@import 'variables';
+@import 'header-wrap';
+@import 'footer';
+@import 'helper-classes';
+
+
+body {
+  font-family: $raleway;
+  position: relative;
+  color: #ccc;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h3 {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.btn {
+  text-align: center;
+  height: 60px;
+  border-radius: 5px;
+  padding: 25px 45px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 12px;
+  
+  &-transp {
+    border: 1px solid rgba(38, 38, 38, 0.3);
+    background-color: transparent;
+    transition: .5s;
+    margin: 100px 0;
+
+    &:hover {
+      color: $red;
+      border-color: $black;
+    }
+  }
+  
+  &-red {
+    transition: .3s;
+    background-color: $red;
+    color: $white;
+
+    &:hover {
+      color: $black;
+      background-color: #f6b9bd;
+    }
+  }
+}
+
+/*----------DESTINATIONS section-----------*/
+
+.previews {
+  background-color: #fff;
+  position: relative;
+  z-index: 5;
+  top: -70px;
+  left: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
+  color: $black;
+
+  .preview {
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    margin: 30px 0;
+    text-align: center;
+
+    &:first-child {
+      border-left: none;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-family: $open-sans;
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.paragraph {
+  font-family: $open-sans;
+  font-size: 16px;
+  color: $gray;
+  margin-bottom: 85px;
+  margin-top: 20px;
+}
+
+.destinations {
+
+  .destination {
+    min-height: 300px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+
+    &:after {
+      margin: 0 15px;
+      content: "";
+      position: absolute;
+      z-index: 2;
+      width: calc(100% - 30px);
+      height: 60%;
+      bottom: 0;
+      left: 0;
+      opacity: 0.6;
+      background-image: linear-gradient(to top, black 0%, transparent 100%);
+      border-radius: 5px;
+      transition: .5s;
+    }
+
+    &:hover:after {
+      opacity: 0;
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  p {
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  .numbers {
+    font: 16px/40px $open-sans;
+    font-weight: 700;
+    height: 42px;
+    padding: 0 15px;
+    background-color: $red;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    left: 45px;
+
+    i {
+      margin-right: 12px;
+    }
+  }
+
+  .places {
+    position: absolute;
+    z-index: 5;
+    bottom: 30px;
+    left: 45px;
+    text-align: start;
+
+    .name{
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    .place {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .berths {
+    margin: 0;
+    p {
+      margin-right: 30px;
+    }
+  }
+}
+
+/*--------HAVE YOUR OWN BOAT? section---------*/
+
+.own-boat {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  padding: 160px 0;
+
+  img {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 5;
+  }
+
+  button {
+    margin-top: 85px;
+  }
+}
+
+/*-------FEATURED BOATS section---------*/
+
+.feature h2{
+  margin-top: 100px;
+}
+
+
+/*----------------------------------------------------------*/
+
+/*-------@media--------*/
+@media (max-width: 1199px) {
+
+
+
+}
+
+/*-------@media--------*/
+@media (max-width: 991px) {
+
+
+}
+
+/*-------@media--------*/
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 50px;
+  }
+
+
+}
+
+/*-------@media--------*/
+@media (max-width: 576px) {
+
+  h1 {
+    font-size: 45px;
+  }
+
+}
+
