@@ -55,7 +55,13 @@ jQuery(function () {                     /*jQuery(function ($) {    */
         $('.destination').show(700);
 
         $(this).hide(700);
+    });
 
+
+    $("#berth").on("click", function () {
+        $('.destination-berth').show(700);
+
+        $(this).hide(700);
     })
 
 });
