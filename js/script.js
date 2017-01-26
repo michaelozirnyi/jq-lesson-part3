@@ -1,7 +1,7 @@
 jQuery(function () {                     /*jQuery(function ($) {    */
 
 
-    jQuery('#find').autocomplete({
+    $('#find').autocomplete({
 
         minChars: 1,
         delimiter: /(,|;)\s*/,
@@ -27,7 +27,35 @@ jQuery(function () {                     /*jQuery(function ($) {    */
         ]
     });
 
+    /*var ttt = $('.destination').css("display");
+    console.log(ttt);
+    if(ttt)
 
 
+
+    var asd = $('.destination').length;
+
+
+
+
+    for (var aaa = 0; aaa < asd; aaa++)
+        console.log(aaa + " fuck ");
+*/
+
+
+   /* var textBtn = $('.destination'),
+        mas = textBtn.map(function(){
+
+            console.log(mas);
+        });
+*/
+
+
+    $("#btn-destinations").on("click", function () {
+        $('.destination').show(700);
+
+        $(this).hide(700);
+
+    })
 
 });

@@ -228,6 +228,14 @@ h5 {
   margin-top: 100px;
 }
 
+.destinations-berths {
+  @extend .destinations;
+}
+
+.destination-berth {
+  @extend .destination;
+}
+
 
 /*-------@media--------*/
 @media (max-width: 768px) {
