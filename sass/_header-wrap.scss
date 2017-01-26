@@ -1,7 +1,7 @@
 .header-wrap {
   background: #005853;
   position: relative;
-  height: 700px;
+  height: 100vh;
   z-index: 3;
   overflow: hidden;
 }
@@ -59,7 +59,6 @@
   }
 }
 
-
 .reservation {
   margin-top: 20vh;
 
@@ -100,9 +99,21 @@
 /*-------@media--------*/
 @media (max-width: 768px) {
 
+  .header-wrap {
+    height: 700px;
+  }
+
   .menu-bar li {
     padding-right: 50px;
   }
 }
 
+
+/*   ----For autocomplete----  */
+.autocomplete-suggestion {
+  background-color: #fff;
+  padding: 10px 25px;
+  color: $black;
+  opacity: .9;
+}
 

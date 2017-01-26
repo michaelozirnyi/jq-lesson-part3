@@ -7,6 +7,7 @@ body {
   font-family: $raleway;
   position: relative;
   color: #ccc;
+
 }
 
 h1 {
@@ -236,6 +237,9 @@ h5 {
     font-size: 50px;
   }
 
+  .btn {
+    padding: 25px 35px;
+  }
 }
 
 /*-------@media--------*/
@@ -244,5 +248,17 @@ h5 {
   h1 {
     font-size: 45px;
   }
-}
 
+  .btn {
+    padding: 25px 20px;
+  }
+  .reservation {
+
+    input {
+      width: calc(100% - 120px);
+    }
+    button {
+      padding: 23px 5px;
+    }
+  }
+}
