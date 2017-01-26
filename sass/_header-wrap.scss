@@ -2,6 +2,7 @@
   background: #005853;
   position: relative;
   height: 100vh;
+  min-height: 560px;
   z-index: 3;
   overflow: hidden;
 }
@@ -62,39 +63,43 @@
 .reservation {
   margin-top: 20vh;
 
-  form {
-    margin: 90px auto 0;
-  }
+  .autocompl-form {
+    position: relative;
+    z-index: 10;
+    margin: 10vh auto 0;
 
-  input {
-    height: 60px;
-    width: calc(100% - 200px);
-    border-radius: 5px 0 0 5px;
-    border: none;
-    padding-left: 20px;
-
-  }
-
-  button {
-    background-color: $red;
-    border-radius: 0 5px 5px 0;
-    padding: 23px 40px;
-    margin-left: -5px;
-    border: none;
-    color: $white;
-    font-weight: 700;
-    font: 14px/11px $raleway;
-
-    i {
-      margin-right: 10px;
+    input {
+      font-family: $raleway;
+      height: 60px;
+      width: 100%;
+      border-radius: 5px 0 0 5px;
+      border: none;
+      padding: 0 200px 0 20px;
     }
 
-    &:hover {
-      color: $black;
+    button {
+      position: absolute;
+      z-index: 15;
+      top: 0;
+      right: 0;
+      background-color: $red;
+      border-radius: 0 5px 5px 0;
+      padding: 23px 40px;
+      border: none;
+      color: $white;
+      font-weight: 700;
+      font: 14px/11px $raleway;
+
+      i {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        color: $black;
+      }
     }
   }
 }
-
 
 /*-------@media--------*/
 @media (max-width: 768px) {
@@ -108,6 +113,20 @@
   }
 }
 
+/*-------@media--------*/
+@media (max-width: 576px) {
+
+  .reservation .autocompl-form{
+
+    input {
+      padding: 0 130px 0 20px;
+    }
+
+    button {
+      padding: 23px 10px;
+    }
+  }
+}
 
 /*   ----For autocomplete----  */
 .autocomplete-suggestion {

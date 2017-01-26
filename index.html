@@ -49,9 +49,9 @@
         <div class="container text-center reservation">
             <h1 class="upper text-white">Reserve a boat now!</h1>
             <h2 class="upper text-white">And set your sails into paradise!</h2>
-            <form action="" method="get" class=" col-xl-8 col-lg-8 col-md-10 col-sm-12">
-                <input id="find" type="text" title="What is your destination, sailor?">
-                <button  class="upper">
+            <form action="#" method="get" class="autocompl-form col-xl-8 col-lg-8 col-md-10 col-sm-12">
+                <input id="find" type="text" class="upper" title="destination" placeholder="What is your destination, sailor?" >
+                <button class="upper">
                     <i class="fa fa-ship" aria-hidden="true"></i>Find a boad</button>   <!--  type="submit"  -->
             </form>
         </div>
@@ -130,7 +130,7 @@
             </div>
 
             <div class="row just-c-center">
-                <div class="destination col-lx-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div style="display: none;" class="destination col-lx-4 col-lg-4 col-md-6 col-sm-12 ">
                     <img src="images/mallorca.png" alt="Palma de Mallorca">
                     <p class="numbers"><i class="fa fa-ship" aria-hidden="true"></i>543</p>
                     <div class="places">
@@ -138,7 +138,7 @@
                         <p class="place">Spain</p>
                     </div>
                 </div>
-                <div class="destination col-lx-4 col-lg-4 col-md-6 col-sm-12">
+                <div style="display: none;" class="destination col-lx-4 col-lg-4 col-md-6 col-sm-12">
                     <img src="images/italy.png" alt="Portofino" >
                     <p class="numbers"><i class="fa fa-ship" aria-hidden="true"></i>495</p>
                     <div class="places">
@@ -146,7 +146,7 @@
                         <p class="place">Italy</p>
                     </div>
                 </div>
-                <div class="destination col-lx-4 col-lg-4 col-md-9 col-sm-12 ">
+                <div style="display: none;" class="destination col-lx-4 col-lg-4 col-md-9 col-sm-12 ">
                     <img src="images/navagio.jpg" alt="Navagio beach" >
                     <p class="numbers"><i class="fa fa-ship" aria-hidden="true"></i>402</p>
                     <div class="places">
@@ -157,7 +157,7 @@
             </div>
 
             <div class="row just-c-center">
-                <div class="destination col-lx-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div style="display: none;" class="destination col-lx-4 col-lg-4 col-md-6 col-sm-12 ">
                     <img src="images/ibiza1.png" alt="Ibiza">
                     <p class="numbers"><i class="fa fa-ship" aria-hidden="true"></i>621</p>
                     <div class="places">
@@ -165,7 +165,7 @@
                         <p class="place">Spain </p>
                     </div>
                 </div>
-                <div class="destination col-lx-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div style="display: none;" class="destination col-lx-4 col-lg-4 col-md-6 col-sm-12 ">
                     <img src="images/Singapore.jpg" alt="Singapure">
                     <p class="numbers"><i class="fa fa-ship" aria-hidden="true"></i>495</p>
                     <div class="places">
@@ -173,7 +173,7 @@
                         <p class="place">Singapure</p>
                     </div>
                 </div>
-                <div class="destination col-lx-4 col-lg-4 col-md-9 col-sm-12 ">
+                <div style="display: none;" class="destination col-lx-4 col-lg-4 col-md-9 col-sm-12 ">
                     <img src="images/city-wallpaper-7.jpg" alt="Port Hercules">
                     <p class="numbers"><i class="fa fa-ship" aria-hidden="true"></i>402</p>
                     <div class="places">
@@ -183,7 +183,7 @@
                 </div>
             </div>
 
-            <button class="upper btn btn-transp text-black">Explore more destinations</button>
+            <button id="btn-destinations" type="button" class="upper btn btn-transp text-black">Explore more destinations</button>
         </div>
 
     </section>
@@ -359,7 +359,7 @@
                 <div class="subscribe col-lx-4 col-lg-5 col-md-12 col-sm-12">
                     <h5 class="upper text-white">Subscribe to our newsletter</h5>
                     <form action="" method="post" class="row">
-                        <input type="email" title="Your email adress">
+                        <input type="email" title="email adress" placeholder="Your email adress">
                         <button  class="upper btn-footer">Subscribe</button>   <!--  type="submit"  -->
                     </form>
                     <div class="social row">

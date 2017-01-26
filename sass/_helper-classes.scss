@@ -10,16 +10,15 @@
   &-gray {
     color: $gray;
   }
-}
 
-.text-center {
-  text-align: center;
+  &-center {
+    text-align: center;
+  }
 }
 
 .upper {
   text-transform: uppercase;
 }
-
 
 a:hover {
   text-decoration: none;
