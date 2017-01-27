@@ -236,6 +236,11 @@ h5 {
   @extend .destination;
 }
 
+/*-----RE-MODAL window-----*/
+.remodal {
+  background: rgba(209,255,252, 0.8);
+}
+
 
 /*-------@media--------*/
 @media (max-width: 768px) {

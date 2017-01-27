@@ -1,34 +1,23 @@
 {
   "name": "ozirniy",
-  
-"homepage": "https://github.com/michaelozirnyi",
+  "homepage": "https://github.com/michaelozirnyi",
   "authors": [
     "Mykhailo <mykhailoozirnyi@gmail.com>"
   ],
-"description": "",
-  
-"main": "",
-  
-"license": "MIT",
-  
-"private": true,
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
   "ignore": [
     "**/.*",
-    
-"node_modules",
-   
- "bower_components",
-   
- "test",
-    
-"tests"
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ],
-  
-
-"dependencies": {
-   
- "font-awesome": "^4.7.0",
-    
-"bootstrap": "v4.0.0-alpha.6"
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap": "v4.0.0-alpha.6",
+    "remodal": "^1.1.1"
   }
 }

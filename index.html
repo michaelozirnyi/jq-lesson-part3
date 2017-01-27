@@ -9,6 +9,8 @@
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bower_components/remodal/dist/remodal.css">
+    <link rel="stylesheet" href="bower_components/remodal/dist/remodal-default-theme.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
@@ -201,7 +203,18 @@
         <div class="container text-center text-white">
             <h1 class="upper">Have your own boat?</h1>
             <h2 class="upper">Navigare necesse est, vivere non est necesse</h2>
-            <button class="upper btn btn-red">Make money with your boat</button>
+            <button class="upper btn btn-red" data-remodal-target="modal">Make money with your boat</button>
+
+            <div class="remodal" data-remodal-id="modal">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h3>If you have a boat, you can make money with us!</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at aut, doloremque explicabo
+                    nesciunt non obcaecati placeat! Delectus impedit, ipsam libero placeat rerum unde voluptates.
+                </p>
+                <br>
+                <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+                <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+            </div>
         </div>
     </section>
 
@@ -387,6 +400,7 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/jquery.autocomplete.min.js"></script>
+    <script src="bower_components/remodal/dist/remodal.min.js"></script>
     <script src="bower_components/tether/dist/js/tether.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
