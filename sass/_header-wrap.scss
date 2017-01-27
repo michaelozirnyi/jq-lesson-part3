@@ -1,8 +1,8 @@
 .header-wrap {
-  background: #005853;
+  background-image: url(../images/bg.png);
   position: relative;
   height: 100vh;
-  min-height: 560px;
+  min-height: 600px;
   z-index: 3;
   overflow: hidden;
 }
@@ -10,11 +10,55 @@
 .bg-video {
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  z-index: -1;
+  overflow: hidden;
+  z-index: -100;
 
   video {
-    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*---@media---*/
+  @media (min-aspect-ratio: 16/9) {
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    video {
+      width: auto;
+      height: 100%;
+    }
+  }
+  /*---*/
+  /*@media (min-aspect-ratio: 16/9) {
+    video {
+      height: 300%;
+      top: -100%;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    video {
+      width: 300%;
+      left: -100%;
+    }
+  }*/
+  /*---*/
+  @media (max-width: 767px) {
+    video {
+      display: none;
+    }
   }
 }
 
