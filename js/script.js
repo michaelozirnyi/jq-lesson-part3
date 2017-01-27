@@ -5,10 +5,11 @@ jQuery(function () {                     /*jQuery(function ($) {    */
 
         minChars: 1,
         delimiter: /(,|;)\s*/,
-        maxHeight: 300,
+        maxHeight: 200,
         width: 300,
         zIndex: 9999,
         deferRequestBy: 300,
+        lookupLimit: 3,
         lookup: [
             "Андрей",
             "Алексей",
@@ -23,7 +24,8 @@ jQuery(function () {                     /*jQuery(function ($) {    */
             "Java-a",
             "Java-as",
             "Java-asd",
-            "JavaScript"
+            "JavaScript",
+            "JS"
         ]
     });
 
