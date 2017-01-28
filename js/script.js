@@ -9,7 +9,7 @@ jQuery(function () {                     /*jQuery(function ($) {    */
         width: 300,
         zIndex: 9999,
         deferRequestBy: 300,
-        lookupLimit: 3,
+        lookupLimit: 5,
         lookup: [
             "Андрей",
             "Алексей",
@@ -29,41 +29,40 @@ jQuery(function () {                     /*jQuery(function ($) {    */
         ]
     });
 
-    /*var ttt = $('.destination').css("display");
-    console.log(ttt);
-    if(ttt)
 
+   /*--------*/
 
+    var $cardResources = $('.destinations .hidden'),
+        $loadMoreBtn = $('#btn-more-destin'),
+        numberToShow = 3,
+        hidTime = 1;
 
-    var asd = $('.destination').length;
+    $loadMoreBtn.on("click", function () {
 
+        $('.hidden').slice(0, numberToShow ).removeClass('hidden');
 
+        hidTime += numberToShow;
 
-
-    for (var aaa = 0; aaa < asd; aaa++)
-        console.log(aaa + " fuck ");
-*/
-
-
-   /* var textBtn = $('.destination'),
-        mas = textBtn.map(function(){
-
-            console.log(mas);
-        });
-*/
-
-
-    $("#btn-destinations").on("click", function () {
-        $('.destination').show(700);
-
-        $(this).hide(700);
+        if($cardResources.length < hidTime) {
+            $loadMoreBtn.addClass('hidden')
+        }
     });
 
+    /*--------*/
 
-    $("#berth").on("click", function () {
-        $('.destination-berth').show(700);
+    var $numResources = $('.hidden-feature'),
+        $moreBtn = $('#btn-berth'),
+        numberShow = 2,
+        hidTimeBtnBerch = 1;
 
-        $(this).hide(700);
-    })
+    $moreBtn.on("click", function () {
 
+        $('.hidden-feature').slice(0, numberShow ).removeClass('hidden-feature');
+
+        hidTimeBtnBerch += numberShow;
+
+        if($numResources.length < hidTimeBtnBerch) {
+            $moreBtn.addClass('hidden')
+        }
+    });
 });
