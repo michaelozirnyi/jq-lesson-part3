@@ -40,7 +40,7 @@ h5 {
   font-size: 14px;
   font-weight: 700;
   line-height: 12px;
-  
+
   &-transp {
     border: 1px solid rgba(38, 38, 38, 0.3);
     background-color: transparent;
@@ -52,7 +52,7 @@ h5 {
       border-color: $black;
     }
   }
-  
+
   &-red {
     transition: .3s;
     background-color: $red;

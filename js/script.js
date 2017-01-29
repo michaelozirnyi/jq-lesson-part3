@@ -50,14 +50,14 @@ jQuery(function () {                     /*jQuery(function ($) {    */
 
     /*--------*/
 
-    var $numResources = $('.hidden-feature'),
+    var $numResources = $('.destinations-berths .hidden'),
         $moreBtn = $('#btn-berth'),
         numberShow = 2,
         hidTimeBtnBerch = 1;
 
     $moreBtn.on("click", function () {
 
-        $('.hidden-feature').slice(0, numberShow ).removeClass('hidden-feature');
+        $('.destinations-berths .hidden').slice(0, numberShow ).removeClass('hidden');
 
         hidTimeBtnBerch += numberShow;
 
