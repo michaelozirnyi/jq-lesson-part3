@@ -273,7 +273,7 @@ h5 {
 .modal-content {
   background-color: #efefef;
   color: $black;
-  margin: 15% auto;
+  margin: 10% auto;             // auto not work for - height!(top, bottom)  ??
   padding: 20px 50px 40px;
   border: 2px solid $gray;
   width: 80%;
