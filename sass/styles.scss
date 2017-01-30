@@ -252,9 +252,59 @@ h5 {
   @extend .destination;
 }
 
+
+
 /*-----RE-MODAL window-----*/
 .remodal {
   background: rgba(209,255,252, 0.8);
+}
+
+/*----MODAL WINDOW-----*/
+.mod {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-content {
+  background-color: #efefef;
+  color: $black;
+  margin: 15% auto;
+  padding: 20px 50px 40px;
+  border: 2px solid $gray;
+  width: 80%;
+  height: auto;
+
+  p{
+    color: $black;
+    display: block;
+  }
+
+  div {
+    text-align: center !important;
+    position: relative !important;
+    width: 50%;
+    margin: 0 auto 30px;
+    top: 0;
+    left: 0 !important;
+    padding: 15px;
+    border-bottom: 1px solid $gray;
+  }
+}
+
+.close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 101;
+  color: #fff;
+  font-size: 35px;
+  line-height: 10px;
+  opacity: 1;
 }
 
 

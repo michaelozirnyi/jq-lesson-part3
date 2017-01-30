@@ -2,7 +2,6 @@ jQuery(function () {                     /*jQuery(function ($) {    */
 
 
     $('#find').autocomplete({
-
         minChars: 1,
         delimiter: /(,|;)\s*/,
         maxHeight: 200,
@@ -15,7 +14,7 @@ jQuery(function () {                     /*jQuery(function ($) {    */
             "Алексей",
             "Александр",
             "Арсений",
-            "Арсений",
+            "Артур",
             "C",
             "C++",
             "Clojure",
@@ -35,14 +34,13 @@ jQuery(function () {                     /*jQuery(function ($) {    */
     var $cardResources = $('.destinations .hidden'),
         $loadMoreBtn = $('#btn-more-destin'),
         numberToShow = 3,
-        hidTime = 1;
+        hidTime = 3;
 
     $loadMoreBtn.on("click", function () {
 
         $('.hidden').slice(0, numberToShow ).removeClass('hidden');
 
         hidTime += numberToShow;
-
         if($cardResources.length < hidTime) {
             $loadMoreBtn.addClass('hidden')
         }
@@ -60,9 +58,36 @@ jQuery(function () {                     /*jQuery(function ($) {    */
         $('.destinations-berths .hidden').slice(0, numberShow ).removeClass('hidden');
 
         hidTimeBtnBerch += numberShow;
-
         if($numResources.length < hidTimeBtnBerch) {
             $moreBtn.addClass('hidden')
         }
     });
+
+
+    /*--------*/
+    var modal = $('#myMod'),
+        modalContent = $('.modal-content'),
+        openModal = $('.destination'),
+        closeSpan = $('.close');
+
+
+    openModal.on('click', function () {
+        // modalContent.append($('.places', this).clone(this));         /*---The same with the next string---*/
+        $('.places', this).clone(this).appendTo(modalContent);
+        $('.hidden-text', this).clone(this).appendTo(modalContent);
+
+        modal.removeClass('hidden');
+    });
+
+    closeSpan.on('click', function () {
+        modal.addClass('hidden');
+
+        $('.modal-content .places').hide();
+        $('.modal-content .hidden-text').hide();
+    });
+
+    /*$(window).on('click', function () {
+        modal.addClass('hidden');
+
+    });*/
 });
